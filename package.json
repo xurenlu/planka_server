@@ -12,7 +12,6 @@
     "db:migrate": "knex migrate:latest --cwd db",
     "db:seed": "knex seed:run --cwd db",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
-    "postinstall":"npm run db:init && npm run db:migrate && npm run db:seed",
     "start:daemon": "nodemon",
     "start": "node root.js",
     "test": "mocha test/lifecycle.test.js test/integration/**/*.test.js test/utils/**/*.test.js"

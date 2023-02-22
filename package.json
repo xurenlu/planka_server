@@ -2,6 +2,10 @@
   "name": "planka-server",
   "private": true,
   "main": "app.js",
+  "engines": {
+    "node": "16.18.1",
+    "npm": "8.19.2"
+  },
   "scripts": {
     "preinstall":"npm config set registry https://registry.npmmirror.com",
     "console": "dotenv sails console",
@@ -57,7 +61,5 @@
     "mocha": "^10.1.0",
     "nodemon": "^2.0.20",
     "supertest": "^6.3.1"
-  },
-  "engines": {
   }
 }

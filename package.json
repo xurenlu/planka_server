@@ -18,8 +18,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "airbnb-base",
-      "../package.json"
+      "airbnb-base"
     ],
     "rules": {
       "no-throw-literal": "off",

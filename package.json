@@ -3,6 +3,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
+    "preinstall":"npm config set registry https://registry.npmmirror.com",
     "console": "dotenv sails console",
     "db:init": "node db/init.js",
     "db:migrate": "knex migrate:latest --cwd db",

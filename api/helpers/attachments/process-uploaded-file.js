@@ -24,6 +24,7 @@ module.exports = {
     const filePath = path.join(rootPath, filename);
 
     fs.mkdirSync(rootPath);
+    sails.log('fd:',inputs.file.fd);
     await moveFile(inputs.file.fd, filePath);
 
     let image = sharp(filePath, {

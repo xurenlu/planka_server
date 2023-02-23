@@ -29,5 +29,5 @@ module.exports.custom = {
   projectBackgroundImagesUrl: `${process.env.BASE_URL}/project-background-images`,
 
   attachmentsPath: path.join(sails.config.appPath, 'private', 'attachments'),
-  attachmentsUrl: `${process.env.BASE_URL}/attachments`,
+  attachmentsUrl: `http://kanban.17.biying88.cn/attachments`,
 };

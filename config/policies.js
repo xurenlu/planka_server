@@ -17,11 +17,9 @@ module.exports.policies = {
    */
 
   '*': 'is-authenticated',
-
+  'attachements/*':true,
   'users/create': ['is-authenticated', 'is-admin'],
   'users/delete': ['is-authenticated', 'is-admin'],
-
   'projects/create': ['is-authenticated', 'is-admin'],
-
   'access-tokens/create': true,
 };

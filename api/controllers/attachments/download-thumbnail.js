@@ -11,7 +11,7 @@ module.exports = {
   inputs: {
     id: {
       type: 'string',
-      regex: /^[0-9a-z]+$/,
+      regex: /^[0-9a-zA—Z\-]+$/,
       required: true,
     },
   },

@@ -23,7 +23,7 @@ module.exports.custom = {
   tokenExpiresIn: parseInt(process.env.TOKEN_EXPIRES_IN, 10) || 365,
 
   userAvatarsPath: path.join(sails.config.paths.public, 'user-avatars'),
-  userAvatarsUrl: `${process.env.BASE_URL}/user-avatars`,
+  userAvatarsUrl: `http://kanban.17.biying88.cn/user-avatars`,
 
   projectBackgroundImagesPath: path.join(sails.config.paths.public, 'project-background-images'),
   projectBackgroundImagesUrl: `${process.env.BASE_URL}/project-background-images`,

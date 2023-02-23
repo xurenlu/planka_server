@@ -28,7 +28,7 @@ module.exports = {
     const { attachment, card, project } = await sails.helpers.attachments
       .getProjectPath(inputs.id)
       .intercept('pathNotFound', () => Errors.ATTACHMENT_NOT_FOUND);
-
+    /**
     const isBoardMember = await sails.helpers.users.isBoardMember(currentUser.id, card.boardId);
 
     if (!isBoardMember) {
@@ -41,7 +41,7 @@ module.exports = {
         throw Errors.ATTACHMENT_NOT_FOUND; // Forbidden
       }
     }
-
+  */
     const filePath = path.join(
       sails.config.custom.attachmentsPath,
       attachment.dirname,

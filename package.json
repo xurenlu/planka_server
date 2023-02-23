@@ -13,7 +13,7 @@
     "db:seed": "knex seed:run --cwd db",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "start:daemon": "nodemon",
-    "start": "node app.js",
+    "start": "node app.js --prod",
     "test": "mocha test/lifecycle.test.js test/integration/**/*.test.js test/utils/**/*.test.js"
   },
   "eslintConfig": {

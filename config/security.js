@@ -29,7 +29,7 @@ module.exports.security = {
 
   cors: {
     allRoutes: true,
-    allowOrigins: ['http://localhost:3000'],
+    allowOrigins: ['http://localhost:3000', 'http://plan.17.biying88.cn'],
     allowRequestHeaders: ['Authorization'],
     allowCredentials: true,
   },

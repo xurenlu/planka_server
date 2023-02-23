@@ -17,7 +17,7 @@ module.exports.policies = {
    */
 
   '*': 'is-authenticated',
-  'attachements/*': [],
+  'attachments/*': [],
   'users/create': ['is-authenticated', 'is-admin'],
   'users/delete': ['is-authenticated', 'is-admin'],
   'projects/create': ['is-authenticated', 'is-admin'],

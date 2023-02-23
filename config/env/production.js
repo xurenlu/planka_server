@@ -218,7 +218,7 @@ module.exports = {
      *
      */
 
-    onlyAllowOrigins: [new url.URL(process.env.BASE_URL).origin],
+    onlyAllowOrigins: [new url.URL(process.env.BASE_URL).origin,"http://localhost:3000"],
 
     /**
      *

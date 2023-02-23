@@ -23,8 +23,10 @@ module.exports = {
   },
 
   async fn(inputs, exits) {
+    // eslint-disable-next-line no-console
+
     const { currentUser } = this.req;
-    sails.log("inputs:",inputs);
+    sails.log.error('inputs:', inputs);
     const { attachment, card, project } = await sails.helpers.attachments
       .getProjectPath(inputs.id)
       .intercept('pathNotFound', () => Errors.ATTACHMENT_NOT_FOUND);
